@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/inf_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/inf_value_a" />
+
+        <EditText
+            android:id="@+id/txt_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:ems="10"
+            android:fontFamily="@font/rubik_medium"
+            android:inputType="numberSigned" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/inf_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/inf_value_b" />
+
+        <EditText
+            android:id="@+id/txt_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:ems="10"
+            android:fontFamily="@font/rubik_medium"
+            android:inputType="numberSigned" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/inf_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/inf_result" />
+
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:fontFamily="@font/rubik_medium"
+            android:text="..." />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:fontFamily="@font/rubik_medium"
+            android:onClick="my_add_click"
+            android:text="@string/act_add" />
+
+        <Button
+            android:id="@+id/btn_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:fontFamily="@font/rubik_medium"
+            android:onClick="my_sub_click"
+            android:text="@string/act_sub" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:fontFamily="@font/rubik_medium"
+            android:onClick="my_div_click"
+            android:text="@string/act_div" />
+
+        <Button
+            android:id="@+id/btn_mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:fontFamily="@font/rubik_medium"
+            android:onClick="my_mul_click"
+            android:text="@string/act_mul" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_sqrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_medium"
+            android:onClick="my_sqrt_click"
+            android:text="Sqrt" />
+
+        <Button
+            android:id="@+id/btn_pow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_medium"
+            android:onClick="my_pow_click"
+            android:text="Pow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_sin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_medium"
+            android:onClick="my_sin_click"
+            android:text="Sin" />
+
+        <Button
+            android:id="@+id/btn_cos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_medium"
+            android:onClick="my_cos_click"
+            android:text="Cos" />
+
+        <Button
+            android:id="@+id/btn_tan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_medium"
+            android:onClick="my_tan_click"
+            android:text="Tan" />
+    </LinearLayout>
+</LinearLayout>
