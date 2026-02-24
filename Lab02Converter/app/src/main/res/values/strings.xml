@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lab2_convertor</string>
+    <string name="textfrom">From:</string>
+    <string name="textto">To:</string>
+    <string name="textbnt">Convert</string>
+    <string name="resultview">Result:</string>
+    <string name="rblength">length</string>
+    <string name="rbtime">time</string>
+    <string name="rbmass">mass</string>
+    <string name="title_name">334 Tilik</string>
+</resources>

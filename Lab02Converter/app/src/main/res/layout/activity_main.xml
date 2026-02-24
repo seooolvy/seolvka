@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/title_name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Строка From -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/label_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textfrom"
+                android:textSize="18sp"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/plain_from"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:hint="0.0"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:minWidth="80dp"/>
+        </LinearLayout>
+
+        <!-- Строка To -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/label_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textto"
+                android:textSize="18sp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/inf_to"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/resultview"
+                android:textSize="18sp"
+                android:gravity="end"
+                android:paddingEnd="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:minWidth="80dp"/>
+        </LinearLayout>
+
+        <!-- Строка выбора типа единиц -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <RadioGroup
+                android:id="@+id/rg_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:checkedButton="@+id/rb_length">
+
+                <RadioButton
+                    android:id="@+id/rb_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rblength"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbtime"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_mass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbmass"
+                    android:textSize="16sp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Кнопка конвертации -->
+        <Button
+            android:id="@+id/bt_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/textbnt"
+            android:onClick="onConvert"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</LinearLayout>
