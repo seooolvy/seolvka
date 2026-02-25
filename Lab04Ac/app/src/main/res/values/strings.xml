@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab04Ac</string>
+
+    <string name="author">Тилик G334</string>
+
+    <string name="hint_text">Введите текст</string>
+    <string name="flag1">Флаг 1</string>
+    <string name="flag2">Флаг 2</string>
+
+    <string name="open">Открыть</string>
+    <string name="exit">Выход</string>
+    <string name="dialog">Диалог</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+</resources>
