@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Lab4_Tilik</string>
+    <string name="title_name">Tilik 334</string>
+
+    <string name="cost_apple">Цена яблок (кг):</string>
+    <string name="cost_strawberry">Цена клубники (кг):</string>
+    <string name="cost_blueberry">Цена черники (кг):</string>
+    <string name="cost_raspberry">Цена малины (кг):</string>
+    <string name="cost_cherry">Цена вишни (кг):</string>
+    <string name="cost_grapes">Цена винограда (кг):</string>
+    <string name="cost_lemon">Цена лимона (кг):</string>
+    <string name="cost_orange">Цена апельсина (кг):</string>
+    <string name="cost_pear">Цена груши (кг):</string>
+
+    <string name="cb_apple">Яблоки</string>
+    <string name="cb_strawberry">Клубника</string>
+    <string name="cb_blueberry">Черника</string>
+    <string name="cb_raspberry">Малина</string>
+    <string name="cb_cherry">Вишня</string>
+    <string name="cb_grapes">Виноград</string>
+    <string name="cb_lemon">Лимон</string>
+    <string name="cb_orange">Апельсин</string>
+    <string name="cb_pear">Груша</string>
+
+    <string name="kg_hint">кг</string>
+
+    <string name="btn_calc">Рассчитать</string>
+
+    <string name="toast">Toast</string>
+    <string name="dialog">Диалог</string>
+</resources>
